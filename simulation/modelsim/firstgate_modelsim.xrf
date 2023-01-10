@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/firstgate/firstgate.v
+source_file = 1, C:/firstgate/db/firstgate.cbx.xml
+design_name = firstgate
+instance = comp, \c~output , c~output, firstgate, 1
+instance = comp, \a~input , a~input, firstgate, 1
+instance = comp, \b~input , b~input, firstgate, 1
+instance = comp, \c~0 , c~0, firstgate, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1
